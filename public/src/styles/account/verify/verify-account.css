@@ -1,0 +1,102 @@
+#verify-account{
+   width: 100%;
+   height: 100%;
+   padding: 0 336px;
+  
+}
+
+.verify-title-wrapper,.verify-msg-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.verify-title-wrapper h1,.verify-title-wrapper h2,.verify-title-wrapper h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0,0.6);
+}
+
+.verify-title-wrapper h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+.verify-title-wrapper h2{
+    font-size: 35px;
+}
+
+
+
+.verify-msg-wrapper h3{
+    font:25px "Roboto Slab", serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0,0.6);
+    margin-bottom: 15px;
+}
+
+.verify-msg-wrapper .to-login{
+    font: 20px "Roboto", serif;
+    color: #a5a5a5;
+}
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+    #verify-account {
+        padding: 0 150px;
+      }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+    #verify-account {
+        padding: 0 100px;
+      }
+}
+
+@media only screen and  (max-width : 991px) {
+    #verify-account {
+        padding: 0 50px;
+      }
+
+      .verify-title-wrapper h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .verify-title-wrapper h2{
+        font-size: 25px;
+    }
+
+
+.verify-msg-wrapper h3{
+  font-size: 20px;
+  margin-bottom: 25px;
+  
+}
+}
+
+
+
+ @media only screen and  (max-width : 480px){
+    #verify-account {
+        padding: 0 40px;
+      }
+
+    .verify-title-wrapper h1{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .verify-title-wrapper h2{
+        font-size: 20px;
+    }
+
+    .verify-msg-wrapper h3{
+        font-size: 18px;
+       
+    }
+} 

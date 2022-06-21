@@ -1,0 +1,217 @@
+#recipe-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  width: 1027px;
+  height: 599px;
+  background: #fff;
+  padding: 22px 36px 30px 32px;
+  z-index: 10;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  z-index: 20;
+}
+
+.recipe-portal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-top,
+.modal-content-wrapper,
+.best-served-for,
+.best-served-for span {
+  display: flex;
+}
+
+.modal-top,
+.best-served-for {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-top h1 {
+  color: rgba(240, 151, 42, 1);
+  font: 38px "Roboto Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal-top button {
+  width: 37px;
+  height: 37px;
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.modal-top {
+  margin-bottom: 22px;
+}
+
+.modal-close-icon {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(165, 165, 165, 1);
+  z-index: 1;
+}
+
+.modal-content-wrapper h3 {
+  color: rgba(150, 187, 54, 1);
+  font: 18px "Roboto Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal-content-left {
+  min-width: 412px;
+  margin-right: 43px;
+}
+
+.modal-content-right {
+  min-width: 504px;
+}
+
+.modal-content-left .recipe-img {
+  width: 100%;
+  height: 243px;
+  border-radius: 5px;
+}
+
+.best-served-for {
+  margin: 22px 0 17px 0;
+}
+
+.best-served-for span {
+  color: rgba(255, 255, 255, 1);
+  font: 14px "Roboto Slab", serif;
+  background: rgba(150, 187, 54, 1);
+  padding: 4px 11px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-left p,
+.modal-content-right p {
+  color: #a5a5a5;
+  font: 16px "Roboto", sans-serif;
+  line-height: 21px;
+ }
+
+.modal-content-left p {
+  margin-bottom: 25px;
+  width: 412px;
+  height: 126px;
+}
+
+.modal-content-right p {
+  margin-top: 16px;
+  width: 504px;
+  height: 436px;
+}
+
+
+.modal-open{
+    filter: blur(24px) opacity(63%);
+}
+
+/* media queries */
+
+@media only screen and (max-width : 480px){
+#recipe-modal{
+        padding: 10px 7px;
+}
+.modal-top h1{
+            font-size: 20px;
+}
+.modal-close-icon {
+        font-size: 20px;
+}
+.modal-top button,.modal-close-icon{
+        width: 25px;
+        height: 25px;
+}
+.modal-content-left{
+        min-width: 100%;
+}
+.modal-content-left .recipe-img{
+        height: 300px;
+}   
+}
+    
+
+@media only screen and (max-width : 768px){
+#recipe-modal{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.modal-content-wrapper{
+    flex-direction: column;
+}
+.modal-top h1{
+    font-size: 25px;
+}
+
+.modal-content-left{
+    margin: 0;
+}
+
+.modal-content-left .recipe-img{
+    height: 350px;
+}
+
+.modal-content-left p{
+    margin: 0;
+}
+
+.modal-content-right{
+    margin-top: 35px;
+    min-width: 100%;
+}
+
+.modal-content-left p,
+.modal-content-right p {
+  font-size: 15px;
+  width: 100%;
+ }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 991px) {
+#recipe-modal{
+width: 750px;
+
+}
+
+.modal-top h1{
+    font-size: 30px;
+}
+.modal-top button,.modal-close-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.modal-content-left{
+    min-width: 300px;
+}
+.modal-content-left p{
+    width: 100%;
+}
+
+.modal-content-right{
+    min-width: 314px;
+}
+.modal-content-right p {
+    width: 314px;
+}
+
+}

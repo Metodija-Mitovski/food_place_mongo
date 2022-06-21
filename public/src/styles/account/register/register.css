@@ -1,0 +1,137 @@
+.create-acc-section {
+  padding: 0 337px;
+  min-height: 527px;
+}
+
+.create-acc-section main {
+  display: flex;
+  margin-top: 93px;
+}
+
+.create-acc-main-left {
+  width: 412px;
+  margin-right: 102px;
+}
+
+.create-acc-main-left h1 {
+  font: 46px "Roboto Slab", serif;
+  font-weight: 700;
+  color: #f0972a;
+  margin-bottom: 29px;
+}
+
+.create-acc-main-left span {
+  color: #626262;
+}
+
+.create-acc-main-left p {
+  font: 20px "Roboto Slab", serif;
+  font-weight: 400;
+  color: #a5a5a5;
+  line-height: 26px;
+}
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+    .create-acc-section  {
+        padding: 0 150px;
+      }
+    .create-acc-main-left h1 {
+        font: 43px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .create-acc-main-left {
+        margin-right: 90px;
+    }
+    .create-acc-main-left p { 
+        font: 17px "Roboto Slab", serif; 
+    }
+
+ 
+}
+
+
+@media only screen and (min-width : 992px) and (max-width : 1199px){
+    .create-acc-section  {
+        padding: 0 100px;
+      } 
+
+      .create-acc-main-left h1 {
+        font: 40px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .create-acc-main-left {
+        margin-right: 90px;
+    }
+
+    .create-acc-main-left p { 
+        font: 15px "Roboto Slab", serif; 
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+    .create-acc-section  {
+        padding: 0 50px;
+      }
+
+    .create-acc-section main {
+       flex-direction: column;
+      }
+    .create-acc-main-left h1 {
+        font: 30px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .create-acc-main-left {
+        margin-right: 0;
+        width: 433px;
+    }
+
+    .create-acc-main-left p { 
+        font: 15px "Roboto Slab", serif; 
+    }
+
+    .create-acc-main-right{
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width : 767px){
+    .create-acc-section {
+        padding: 0 40px;
+    }
+    .create-acc-section main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    
+    .create-acc-main-left {
+        width: 100%;
+        margin:0;
+    }
+
+    .create-acc-main-left h1 {
+        font: 25px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+
+    .create-acc-main-left p { 
+        font: 15px "Roboto Slab", serif; 
+    } 
+}
+
+@media only screen and (max-width : 479px){
+    .create-acc-section {
+        padding: 0 15px;
+    }
+
+    .create-acc-main-left p { 
+        font: 13px "Roboto Slab", serif; 
+    }
+    
+    .create-acc-main-left h1 {
+        margin-bottom: 20px;
+    }
+}

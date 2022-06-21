@@ -1,0 +1,444 @@
+header {
+  height: 193px;
+  padding: 52px 337px 0 337px;
+}
+
+.logo {
+  min-width: 177px;
+  height: 58px;
+}
+
+header,
+.nav-list
+{
+  justify-content: space-between;
+}
+
+.header-content-wrapper {
+display: flex;
+  width: 100%;
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-acc_list-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 0.3s ease-in-out ;
+}
+
+.header-nav-acc_list-wrapper nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-list {
+    display: flex;
+  list-style-type: none;
+  width: 457px;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li:nth-child(n + 2)::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #f0972a;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: 6px;
+}
+
+.type-list-item {
+  color: #a5a5a5;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-link {
+  color: #a5a5a5;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #a5a5a5;
+}
+
+.login-link,
+.create-account-link {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 11px 20px;
+  text-decoration: none;
+}
+
+.account-nav-list span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #f0972a;
+  margin: 0 17px;
+}
+
+.create-account-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #96bb36;
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.account-nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.account-item {
+  margin-right: 38px;
+}
+
+.my-recipes-link {
+  color: #96bb36;
+}
+.my-account-link {
+  color: #f0972a;
+}
+
+.log-out-btn {
+  color: #b5b5b4;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.account-nav-list-link,
+.log-out-btn {
+  text-decoration: none;
+  font: 18px "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 2px solid #a5a5a5;
+}
+
+.account-nav-list-link {
+  position: relative;
+}
+
+.account-nav-list-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -23.5px;
+  width: 9px;
+  height: 9px;
+  background: #626262;
+  border-radius: 50%;
+}
+
+.active {
+  color: #f0972a;
+}
+
+.hamburger-btn,.close-menu-btn{
+    width: 30px;
+    height: 40px;
+    color: #626262;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-btn{
+    padding-bottom: 10px;
+}
+
+.close-menu-btn{
+   align-self: flex-end;
+    margin: 10px 15px 0 0 ;
+}
+
+.header-nav-acc_list-wrapper.menu-open{
+    transform: translateX(0);
+}
+
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+
+    header {
+        padding: 52px 150px 0 150px;
+      }
+      .nav-list {
+        width: 350px;
+    }
+
+    .type-list-item{
+        font-size: 16px;
+    }
+
+    .login-link,
+    .create-account-link {
+    font-size: 14px;
+    padding: 9px 15px;
+   }
+
+   .nav-list li:nth-child(n + 2)::before {
+   top: 3px;
+   left: -40%;
+  }
+
+  .account-nav-list-link,
+  .log-out-btn {
+    font: 17px "Roboto", sans-serif;
+    font-weight: 900;
+  }
+
+  .account-item {
+    margin-right: 20px;
+  }
+
+  .account-nav-list-link::after {
+    top: 6px;
+    right: -15px;
+  }
+
+}
+/* -------------------------------- */
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    header {
+        padding: 52px 100px 0 100px;
+      }
+    .nav-list {
+        width: 300px;
+    }
+
+    .type-list-item{
+        font-size: 15px;
+    }
+    .logo {
+        min-width: 140px;
+        height: 45px;
+      }
+
+    .login-link,
+    .create-account-link {
+    font-size: 13px;
+    padding: 8px 14px;
+   }
+
+   .account-nav-list span {
+   margin: 0 10px;
+  }
+  .nav-list li:nth-child(n + 2)::before {
+    top: 4px;
+    left: -25%;
+    width: 7px;
+    height: 7px;
+    top: 5px;
+   }
+
+   .account-nav-list-link,
+   .log-out-btn {
+     font: 16px "Roboto", sans-serif;
+     font-weight: 900;
+   }
+
+   .account-item {
+    margin-right: 20px;
+  }
+  .account-nav-list-link::after {
+    top: 6px;
+    right: -15px;
+    width: 7px;
+    height: 7px;
+  }
+ }
+/* -------------------------------- */
+
+ @media only screen and (min-width : 768px) and (max-width : 991px) {
+    header {
+        padding: 52px 50px 0 50px;
+      }
+    .nav-list {
+        width: 280px;
+    }
+
+    .type-list-item{
+        font-size: 13px;
+    }
+    .logo {
+        min-width: 135px;
+        height: 40px;
+      }
+
+    .login-link,
+    .create-account-link {
+    font-size: 11px;
+    padding: 8px 9px;
+   }
+
+   .account-nav-list span {
+   margin: 0 5px;
+  }
+  .nav-list li:nth-child(n + 2)::before {
+   left: -25%;
+    width: 5px;
+    height: 5px;
+    top: 7px;
+   }
+
+   .account-nav-list-link,
+   .log-out-btn {
+     font: 13px "Roboto", sans-serif;
+     font-weight: 900;
+   }
+
+   .account-item {
+    margin-right: 13px;
+  }
+  .account-nav-list-link::after {
+    top: 6px;
+    right: -9px;
+    width: 5px;
+    height: 5px;
+  }
+
+ }
+ /* -------------------------------- */
+
+ @media only screen and (max-width : 767px) {
+    header {
+        padding: 30px 40px 0 40px;
+        height: 150px;
+      }
+
+    .logo {
+        min-width: 110px;
+        height: 35px;
+      }
+
+    .hamburger-btn{
+       display: block;
+    }
+
+    .close-menu-btn{
+        display: block;
+    }
+
+    .header-nav-acc_list-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 10;
+        background:#F8F7F2;
+        transform: translateX(100%);
+        
+    }
+
+    .header-nav-acc_list-wrapper nav{
+        flex: 2;
+    }
+
+    .nav-list{
+        display: block;
+        margin-top: 80px;
+    }
+
+    .nav-list li{
+        text-align: center;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        border-bottom: 1px solid #a5a5a5;;
+    }
+
+    .nav-list li::before {
+        display: none;
+    }
+
+    .type-list-item {
+       font-size: 22px;
+    }
+
+    .account-nav-list{
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account-nav-list li{
+        margin-bottom: 20px;
+    }
+
+    .account-nav-list span, .login-link,
+    .create-account-link {
+    font-size: 20px;
+    }
+
+    .account-nav-list-link::after {
+       display: none;
+    }
+    
+    .account-item {
+        margin-right: 0;
+    }
+
+    .account-nav-list-link,
+    .log-out-btn {
+        font-size: 25px;
+    }
+
+    .log-out-btn {
+        margin-top: 30px;
+    }
+ }
+
+
+  /* -------------------------------- */
+
+  @media only screen and (max-width : 479px){
+    header {
+        padding: 20px 15px 0 15px;
+        height: 120px;
+      }
+
+    .header-nav-acc_list-wrapper nav,.nav-list {
+        width: 100%;
+    }
+
+    .logo {
+        min-width: 100px;
+        height: 35px;
+      }
+
+      .hamburger-btn{
+        height: 35px;
+     }
+  } 

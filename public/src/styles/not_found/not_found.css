@@ -1,0 +1,23 @@
+#not-found{
+    background-color: #F8F7F2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#not-found h1{
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0,0.6); 
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.to-home{
+    font: 20px "Roboto", serif;
+    color: #a5a5a5;
+    font-weight: 900;
+}

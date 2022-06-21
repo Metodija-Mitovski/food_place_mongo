@@ -1,0 +1,27 @@
+.submit-btn {
+  font: 16px "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 36px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #96bb36;
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+/* media queries */
+
+@media only screen and (max-width : 1200px){
+    .submit-btn{
+        position: absolute;
+        left: 0;
+        bottom: -65px;
+    }
+}
+

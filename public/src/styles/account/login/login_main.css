@@ -1,0 +1,133 @@
+.login-section {
+  padding: 0 337px;
+  min-height: 527px;
+}
+
+.login-main {
+  display: flex;
+  margin: 93px 0 0 0;
+}
+.login-main-left {
+  width: 688px;
+  height: 156px;
+  margin-right: 144px;
+}
+
+.login-main-left h1 {
+  font: 46px "Roboto Slab", serif;
+  font-weight: 700;
+  color: #f0972a;
+}
+
+.login-main-left h1 span {
+  color: #626262;
+}
+
+.login-main-left p {
+  font: 20px "Roboto Slab", serif;
+  color: #a5a5a5;
+  margin-top: 27px;
+  line-height: 26px;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+    .login-section {
+        padding: 0 150px;
+      }
+    .login-main-left h1{
+        font: 43px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .login-main-left p { 
+        font: 17px "Roboto Slab", serif; 
+    }
+    .login-main-left {
+        margin-right: 90px;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+    .login-section {
+        padding: 0 100px;
+      }
+    .login-main-left h1{
+        font: 40px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .login-main-left {
+        margin-right: 90px;
+       }
+    .login-main-left p { 
+        font: 15px "Roboto Slab", serif; 
+    }
+
+   
+    
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .login-main{
+        flex-direction: column;
+    }
+
+    .login-section {
+        padding: 0 50px;
+      }
+
+    .login-main-left {
+       margin-right: 90px;
+       margin: 0 90px 25px 0;
+      }
+    .login-main-left h1{
+        font: 30px "Roboto Slab", serif;
+        font-weight: 700;   
+    }
+    .login-main-left p { 
+        font: 15px "Roboto Slab", serif; 
+    }
+}
+
+@media only screen and (max-width : 767px){
+    .login-section {
+        padding: 0 40px;
+      }
+      .login-main {
+          flex-direction: column;
+      }
+
+      .login-main-left {
+          width: 100%;
+          height: auto;
+          margin: 0 0 29px 0;
+      }
+
+    
+    .login-main-left h1 {
+    font: 25px "Roboto Slab", serif;
+    font-weight: 700;
+    }
+    
+    .login-main-left p {
+    font: 15px "Roboto Slab", serif;
+    }
+}
+
+@media only screen and (max-width : 479px){
+    .login-section {
+        padding: 0 15px;
+      }
+    .login-main-left p {
+        font: 13px "Roboto Slab", serif;
+        margin-top: 20px;
+     }
+      
+}
+
+@media only screen and (max-width : 1200px){
+    .login-form{
+        position: relative;
+    }
+}

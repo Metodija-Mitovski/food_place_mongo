@@ -1,0 +1,69 @@
+#recipes {
+  padding: 0 336px;
+  margin-bottom: 40px;
+ 
+}
+.recipes-main {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-column-gap: 5%;
+  grid-row-gap: 55px;
+  min-height: 435px;
+  position: relative;
+ }
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+    #recipes {
+        padding: 0 150px;
+       }
+
+       .recipes-main {
+        grid-template-columns: repeat(3, 31.4%);
+        grid-column-gap: 3%;
+       }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+    #recipes {
+        padding: 0 100px;
+       }
+
+       .recipes-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5%;
+       }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    #recipes {
+        padding: 0 50px;
+       }
+
+    .recipes-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5%;
+       }
+}
+
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+    #recipes {
+        padding: 0 40px;
+       }
+    
+       .recipes-main {
+        grid-template-columns: repeat(1, 1fr);
+        }
+}
+
+@media only screen and (max-width : 479px) {
+    #recipes {
+        padding: 0 15px;
+       }
+    
+       .recipes-main {
+        grid-template-columns: repeat(1, 1fr);
+        }
+}

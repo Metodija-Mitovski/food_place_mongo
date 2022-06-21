@@ -1,0 +1,26 @@
+{
+  "name": "project_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auth": "nodemon ./services/auth/index.js",
+    "proxy": "nodemon ./services/proxy/index.js",
+    "storage": "nodemon ./services/storage/index.js",
+    "recipes": "nodemon ./services/recipes/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-http-proxy": "^1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "node-input-validator": "^4.5.0"
+  }
+}

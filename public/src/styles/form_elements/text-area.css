@@ -1,0 +1,21 @@
+textarea{
+    width: 100%;
+    font: 14px "Roboto", sans-serif;
+    font-weight: 700;
+    color: #a5a5a5;
+    background: #f0efea;
+    border: 1px solid #a5a5a5;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 0 11px 12px;
+    resize: none;
+    border: 1px solid #a5a5a5;
+}
+
+textarea.text-area-middle{
+    height:96px;
+}
+
+textarea.text-area-right{
+    height: 290px;
+}

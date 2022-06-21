@@ -1,0 +1,35 @@
+{
+  "services": {
+    "proxy": { "port": 10000 },
+    "auth": { "port": 10001 },
+    "storage": { "port": 10003 },
+    "recipe": { "port": 10004 }
+  },
+  "security": {
+    "secret": "secretpassword",
+    "token_exp": "24h",
+    "cookie_exp": 86400000
+  },
+  "storage": {
+    "upload_dir": "files",
+    "max_filesize": 1048576,
+    "allowed_filetypes": [
+      "image/jpg",
+      "image/jpeg",
+      "image/pjpg",
+      "image/png",
+      "image/gif"
+    ]
+  },
+  "mailer": {
+    "key": "756a22e9c6501b26e382dec474d4c1bd-adf6de59-6384fdac",
+    "domain": "sandbox45a5f03cbdee41118fc15fd6ce9b8bff.mailgun.org",
+    "default_address": "m.mitovski93@gmail.com"
+  },
+  "db": {
+    "host": "cluster0.qsvxm.mongodb.net",
+    "username": "dev",
+    "password": "8M3AvRM8C1sYOObe",
+    "dbname": "semosdb"
+  }
+}

@@ -1,0 +1,177 @@
+#recipe-card {
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 435px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 234px;
+  position: relative;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-wrapper span {
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  padding: 4px 11px;  
+  background: #96bb36;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-details-wrapper {
+  padding: 16px 27px 19px 25px;
+}
+
+.card-details-wrapper h2 {
+  color: #f0972a;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.card-details-wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 79px;
+  color: #a5a5a5;
+  margin: 9px 0 22px 0;
+  line-height: 19px;
+}
+
+.card-icons-wrapper {
+  display: flex;
+}
+
+.card-icons-left,
+.card-icons-right {
+  display: flex;
+  align-items: center;
+}
+
+.card-icons-left {
+  flex: 3;
+}
+.card-icons-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.card-icons-left span {
+  color: #626262;
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+  margin: 0 13px 0 5px;
+}
+
+.icon-left,
+.icon-right {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-left {
+  color: #a5a5a5;
+}
+
+.icon-left.like-img{
+    cursor: pointer;
+}
+
+.icon-right {
+  color: #fff;
+  background: #96bb36;
+}
+
+.icon-liked{
+  color: rgba(228, 225, 20, 0.788);
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.card-icons-right button {
+  background: #96bb36;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px) {
+    .card-details-wrapper p  {
+        font-size: 12px;
+        margin: 9px 0 33px 0;
+       }
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .card-details-wrapper p  {
+        font-size: 11px;
+        margin: 9px 0 33px 0;
+       }
+}
+
+@media only screen  and (max-width : 479px) {
+    #recipe-card{
+        height: 400px;
+    }
+
+    .card-img-wrapper{
+        height: 200px;
+    }
+
+    .card-img-wrapper span {
+        padding: 2px 9px;  
+        font-size: 11px;
+       
+    }
+    .card-details-wrapper h2 {
+        font-size: 17px;
+    }
+
+    .card-details-wrapper p {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+
+    .card-details-wrapper {
+        padding: 13px 24px 13px 22px;
+      }
+
+      .card-icons-left span {
+       font-size: 11px;
+    }
+      
+      .icon-left,
+      .icon-right {
+        width: 14px;
+        height: 14px;
+      }
+      .card-icons-right button {
+        width: 20px;
+        height: 20px;
+        }
+}

@@ -1,0 +1,37 @@
+{
+  "services": {
+    "proxy": { "port": 10000 },
+    "auth": { "port": 10001 },
+    "storage": { "port": 10003 },
+    "recipe": { "port": 10004 }
+  },
+  "security": {
+    "secret": "",
+    "token_exp": "",
+    "cookie_exp": 0
+  },
+  "storage": {
+    "upload_dir": "files",
+    "max_filesize": 1048576,
+    "allowed_filetypes": [
+      "image/jpg",
+      "image/jpeg",
+      "image/pjpg",
+      "image/png",
+      "image/gif"
+    ]
+  },
+  "mailer": {
+    "key": "",
+    "domain": "",
+    "default_address": "",
+    "default_url": "http://localhost:10000",
+    "username":""
+  },
+  "db": {
+    "host": "",
+    "username": "",
+    "password": "",
+    "dbname": ""
+  }
+}

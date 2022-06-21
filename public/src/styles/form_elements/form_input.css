@@ -1,0 +1,92 @@
+.input-wrapper {
+  width: 294px;
+  margin-right: 33px;
+}
+
+.input-wrapper label {
+  font: 16px "Roboto Slab", serif;
+  font-weight: bold;
+  color: #f0972a;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-wrapper input {
+  font: 14px "Roboto", sans-serif;
+  font-weight: 700;
+  color: #a5a5a5;
+  background: #f0efea;
+  border: 1px solid #a5a5a5;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0 11px 12px;
+  margin-bottom: 5px;
+}
+
+.error-msg {
+  color: rgb(199, 10, 10);
+  font: 12px "Roboto", sans-serif;
+  margin-top: 4px;
+  height: 14px;
+}
+
+/* width for different inputs */
+.input-wrapper.login-register{
+    width: 294px;
+    margin-bottom: 16px;
+}
+
+.input-wrapper.recipe-title{
+    width: 562px;
+}
+.input-wrapper.number{
+    width: 165px;
+    margin: 0;
+}
+
+/* media queries */
+
+@media only screen and (min-width : 1200px) and (max-width : 1680px){
+    .input-wrapper{
+        width: 250px;
+   }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px){
+    .input-wrapper{
+    width: 200px;
+}
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+    .input-wrapper{
+        width: 200px;
+   }
+
+   .input-wrapper input {
+    font: 11px "Roboto", sans-serif;
+    font-weight: 700;
+   }
+   
+   .input-wrapper.register{
+       width: 50%;
+   }
+
+   
+}
+
+@media only screen and (max-width :767px){
+    .input-wrapper{
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-wrapper.recipe-title,.input-wrapper.number{
+        width: 100%;
+    }
+}

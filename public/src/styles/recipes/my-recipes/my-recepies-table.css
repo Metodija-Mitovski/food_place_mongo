@@ -1,0 +1,126 @@
+#my-recepies-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+#my-recepies-table thead th {
+  font: 16px "Roboto";
+  font-weight: 900;
+  color: #f0972a;
+  text-transform: capitalize;
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+#my-recepies-table tbody tr {
+  background: #ffffff;
+  border-radius: 5px;
+  height: 61px;
+  cursor: pointer;
+}
+
+.table-recipe-name {
+  width: 282px;
+  font: 16px "Roboto";
+  color: #a5a5a5;
+  font-weight: 900;
+  padding-left: 32px;
+  text-transform: capitalize;
+}
+
+.table-recipe-category {
+  width: 223px;
+}
+
+.table-recipe-date {
+  font: 16px "Roboto";
+  width: 81px;
+  color: #a5a5a5;
+}
+.table-recipe-delete {
+  text-align: end;
+  padding-right: 47px;
+}
+
+.table-recipe-category span {
+  font: 12px "Roboto";
+  font-weight: 900;
+  background: #96bb36;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 16px;
+}
+
+#my-recepies-table thead th:nth-child(1) {
+  padding-left: 32px;
+}
+
+#my-recepies-table thead th:last-child {
+  text-align: end;
+  padding-right: 32px;
+}
+
+td button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.info-msg{
+    color:#f0972a;
+    font-family: "Roboto Slab", serif;
+    margin-top: 93px;
+}
+
+
+
+@media only screen and (max-width : 767px) {
+    #my-recepies-table thead th {
+        font: 13px "Roboto";
+        font-weight: 900;
+    }
+    .table-recipe-name {
+       padding-left: 15px;
+       width: 200px;
+    }
+    .table-recipe-category {
+        width: 180px;
+      }
+
+    #my-recepies-table thead th:nth-child(1) {
+        padding-left: 15px;
+    }
+    #my-recepies-table thead th:last-child {
+        padding-right: 15px;
+      }
+
+      .table-recipe-delete {
+        padding-right: 15px;
+        }
+    .table-recipe-name,.table-recipe-date{
+        font-size: 13px;
+    }
+    .table-recipe-category span {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+    .table-recipe-delete img{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width : 479px) {
+    #my-recepies-table thead th {
+        font: 11px "Roboto";
+        font-weight: 900;
+    }
+
+    .table-recipe-category span {
+        font-size: 9px;
+        padding: 3px 8px;
+    }
+    
+}
